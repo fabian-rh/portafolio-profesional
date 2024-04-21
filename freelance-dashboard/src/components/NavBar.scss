@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  // background-color: #fcfcfc;
+}
+
+.container {
+  /* max-width: 1100px; */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  // border: red solid 1px;
+}
+
+.navbar {
+  height: 100px;
+  background-color: #668dc0;
+  position: relative;
+  // border: blue solid 1px;
+  // transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+a {
+  // color: #a0a0a0;
+  text-decoration: none;
+  padding: 0 20px;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.texto-nav-bar {
+  font-size: larger;
+
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #c0d0ef;
+  transition: 0.5s linear;
+}
+// a:hover {
+//   color: #fff;
+// }
+a:hover:after {
+  width: 100%;
+}
+
+// @keyframes navbarAnimation {
+//   0% {
+//     background-color: #333; /* Initial background color */
+//   }
+//   50% {
+//     background-color: #555; /* Intermediate background color */
+//   }
+//   100% {
+//     background-color: #777; /* Final background color */
+//   }
+// }
+
+// /* Apply animation to navbar */
+// .animated-navbar {
+//   animation: navbarAnimation 3s infinite alternate; /* Alternating animation */
+// }
+
+.logo {
+  // border: green solid 1px;
+}
+
+.logo-full{
+
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #668dc0;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
