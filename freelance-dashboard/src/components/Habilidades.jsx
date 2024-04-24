@@ -1,6 +1,6 @@
 const Habilidades = () => {
     return (
-        <h2>Componente Habilidades</h2>
+        <div>asdsad</div>
     )
 }
 export default Habilidades

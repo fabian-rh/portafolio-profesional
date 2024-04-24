@@ -14,13 +14,13 @@ code {
 
 
 html {
-  font-size: 62.5%;
+  font-size: 72.5%;
 }
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Lato-Regular', sans-serif;
-  /* color: #444; */
+  /* font: 300 11px/1.4 'Lato-Regular', sans-serif; */
+  /* color: #793838; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: #022c43; */
