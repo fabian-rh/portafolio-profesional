@@ -1,85 +1,101 @@
 import './AcercaDe.scss'
 const AcercaDe = () => {
+  const pdfPath = 'cv_blue.pdf'
+  function handleDownload () {
+    window.location.href = pdfPath
+  }
   return (
     <body>
-      <div class="container">
-        <main class="row">
-          <section class="col">
-            <header class="title">
+      <div class='container'>
+        <main class='row'>
+          <section class='col'>
+            <header class='title'>
               <h2>Educación</h2>
             </header>
 
-            <div class="contents">
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>High School Degree</h3>
+            <div class='contents'>
+              <div class='box'>
+                <h4>2013</h4>
+                <h3>Tecnológico de Costa Rica</h3>
+                <p>Computadores y sistemas operativos</p>
+              </div>
+
+              <div class='box'>
+                <h4>2020</h4>
+                <h3>Tecnológico de Costa Rica</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Técnico análisis de datos
+                  <br></br>
                 </p>
               </div>
 
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>Bachelor's Degree</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
-
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>Master Degree</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+              <div class='box'>
+                <h4>2024</h4>
+                <h3>Universidad Cenfotec</h3>
+                <p>Bachillerato Ingeniería en Software </p>
+                <br></br>
               </div>
             </div>
           </section>
 
-          <section class="col">
-            <header class="title">
+          <section class='col'>
+            <header class='title'>
               <h2>Experiencia</h2>
             </header>
 
-            <div class="contents">
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>UI/UX Designer</h3>
+            <div class='contents'>
+              <div class='box'>
+                <h4>2014-2020</h4>
+                <h3>Support Analyst - Mackinsey & Co.</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Experiencia en la implementación y soporte de aplicaciones de
+                  gran escala con más de veinte mil usuarios, incluyendo
+                  habilidades en el marco de gestión móvil Mobileiron iOS y
+                  configuraciones de servidores Windows, así como en el sistema
+                  de impresión Uniflow.
                 </p>
               </div>
 
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>Full-Stack Developer</h3>
+              <div class='box'>
+                <h4>2020 - 2022</h4>
+                <h3>It Analyst - Mackinsey & Co.</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Encargado del desarrollo y despliegue de aplicaciones a través
+                  de DevOps en la tienda interna de aplicaciones de Windows. •
+                  Experiencia en Powershell para automatizar el proceso de
+                  instalación de aplicaciones y realizar
+                  instalaciones/eliminaciones de forma silenciosa. • Experiencia
+                  en el uso de pipelines de integración continua/despliegue
+                  continuo (CI/CD) de Azure DevOps para el despliegue y
+                  configuración de aplicaciones.
                 </p>
               </div>
 
-              <div class="box">
-                <h4>2018 - 2022</h4>
-                <h3>Frontend Developer</h3>
+              <div class='box'>
+                <h4>2022 - Actual</h4>
+                <h3>Software Developer - IBM</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Desarrollo de Software con tecnologias en Java y React,
+                  utilizando bases de datos IBM DB2 SQL, asi tambien como
+                  Typescript
                 </p>
               </div>
             </div>
           </section>
         </main>
+      </div>
+      <div className='btcv'>
+        <a href={pdfPath} download target='_blank'>
+          <input
+            type='submit'
+            className='flat-button'
+            value='Descargar CV'
+            onClick={e => {
+              // e.preventDefault();
+              console.log('cv');
+            }}
+          />
+        </a>
       </div>
     </body>
   )

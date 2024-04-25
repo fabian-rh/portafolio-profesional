@@ -12,7 +12,7 @@ const App = () => {
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Inicio />}></Route>
-        <Route path='/habilidades' element={<Habilidades />}></Route>
+        {/* <Route path='/habilidades' element={<Habilidades />}></Route> */}
         <Route path='/contacto' element={<Contacto />}></Route>
         <Route path='/acercade' element={<AcercaDe />}></Route>
       </Routes>

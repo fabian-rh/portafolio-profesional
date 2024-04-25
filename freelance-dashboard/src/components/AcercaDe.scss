@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 body{
+	border: red solid 1px;
 	width: 100%;
 	min-height: 100vh;
 	background-color: #fafafa;
@@ -24,7 +25,7 @@ main.row{
 	grid-column-gap: 20px;
 }
 .col header.title{
-	font-family: helvetica;
+	font-family: Lato, sans-serif;
 	color: #668dc0;
 	padding: 0px 0px 20px 30px;
 }
@@ -79,3 +80,30 @@ main.row{
 		margin-top: 30px;
 	}
 }
+
+.btcv{
+	margin-left: -16rem;
+	margin-top: -60rem;
+	margin-right: 5rem;
+	z-index: 5;
+}
+
+// .flat-button {
+// 	color: #668dc0;
+// 	font-size: 13px;
+// 	font-weight: 400;
+// 	letter-spacing: 4px;
+// 	font-family: Lato, sans-serif;
+// 	text-decoration: none;
+// 	padding: 10px 18px;
+// 	border: 1px solid black;
+// 	margin-top: 25px;
+// 	float: left;
+// 	// animation: fadeInAnimation 1s 1.8s backwards;
+// 	white-space: nowrap;
+
+// 	&:hover {
+// 	  background: #668dc0;
+// 	  color: #333;
+// 	}
+//   }
